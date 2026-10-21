@@ -73,3 +73,7 @@
 .portfolio-project .gdd-video{margin:26px 0 34px}
 .portfolio-project .gdd-video video{display:block;width:100%;max-width:960px;height:auto;border:1px solid var(--project-line,rgba(255,255,255,.14));border-radius:8px;background:#0b0d0f}
 .portfolio-project .gdd-video figcaption{margin-top:10px;font-size:12px;line-height:1.7;color:var(--muted,#9aa39c)}
+
+/* GIF 改为 MP4 后的播放器外观（与图片同尺寸、自动循环、无声） */
+.portfolio-project .web-media video,.document video{display:block;width:100%;height:auto;max-height:620px;object-fit:contain;background:#050a07}
+.document video{margin:auto;background:transparent}

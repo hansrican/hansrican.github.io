@@ -1,4 +1,5 @@
-// Animated content plays directly in place. No image opens a browser tab.
+// 动图：GIF 已转成 MP4，点击时就地换成 <video> 播放
+document.querySelectorAll('.gif-play').forEach(button=>{const fig=button.closest('figure'),media=fig?.querySelector('img'),src=button.dataset.src||'';if(media&&/\.mp4$/.test(src)){const v=document.createElement('video');v.src=src;v.autoplay=true;v.loop=true;v.muted=true;v.playsInline=true;v.preload='auto';v.poster=src.replace(/\.mp4$/,'.jpg');v.className='gif-video';const a=media.closest('a');if(a)a.replaceWith(v);else media.replaceWith(v);}else if(media){media.src=src;const a=media.closest('a');if(a)a.replaceWith(media);}button.remove();});
 document.querySelectorAll('.gif-play').forEach(button=>{const fig=button.closest('figure'),img=fig?.querySelector('img');if(img){img.src=button.dataset.src;const a=img.closest('a');if(a)a.replaceWith(img);}button.remove();});
 const dialog=document.querySelector('#imageDialog');
 document.querySelectorAll('[data-zoom]').forEach(button=>button.addEventListener('click',()=>{dialog.querySelector('img').src=button.dataset.zoom||button.querySelector('img')?.src;dialog.showModal();}));
