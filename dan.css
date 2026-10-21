@@ -1,0 +1,6 @@
+/* 角色文案的章节留白，不影响其他项目 */
+.dan-project .design-unit > h2.topic-title{margin-top:88px;margin-bottom:32px;padding-top:32px;border-top:1px solid rgba(145,163,151,.24);scroll-margin-top:100px}
+.dan-project .design-unit > h2.topic-title:first-child{margin-top:0;padding-top:0;border-top:0}
+.dan-project .design-unit > h3.subtopic-title{margin-top:44px;margin-bottom:18px;line-height:1.6}
+.dan-project .design-unit > h2 + h3.subtopic-title{margin-top:28px}
+@media(max-width:600px){.dan-project .design-unit > h2.topic-title{margin-top:64px;padding-top:24px;margin-bottom:26px}.dan-project .design-unit > h3.subtopic-title{margin-top:34px}}
