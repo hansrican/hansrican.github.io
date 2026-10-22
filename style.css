@@ -45,3 +45,10 @@
 html[data-theme="alt"] .theme-toggle{background:#f6f5ef;border-color:rgba(0,0,0,.18);color:#3a423a}
 html[data-theme="alt"] .theme-toggle:hover{border-color:#4f6a1f;color:#2f4620}
 @media(max-width:700px){.theme-toggle{left:14px;bottom:14px;padding:8px 12px}}
+
+/* 导航里的下载按钮 */
+.nav-download{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border:1px solid #ffffff3d;border-radius:999px;font-size:12px!important;letter-spacing:.02em;transition:border-color .2s,background .2s,color .2s}
+.nav-download:hover{border-color:#d2adff;background:#ffffff0d;color:#f4ecff!important}
+.modern-home .nav-download{border-color:#4a4a58;color:#e2ddea}
+.modern-home .nav-download:hover{border-color:#9b85b1;background:#ffffff08;color:#f2e7ff}
+@media(max-width:760px){.nav-download{padding:4px 10px;font-size:11px!important}}
